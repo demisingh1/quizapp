@@ -5,7 +5,7 @@ import QuizStartPage from './component/QuizStartPage';
 
 function App() {
   return (
-    <div>Hello
+    <div>
       <QuizStartPage />
       <QuestionShowPage />
     </div>
