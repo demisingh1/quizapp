@@ -1,10 +1,26 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+
 *{
   padding:0;
   margin: 0;
   box-sizing: border-box;
 }
 body{
-  background-color: rgb(81, 81, 81);
+  background-color: rgb(31, 30, 30);
+}
+.quiz-start-heading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  color: aliceblue;
+}
+.quiz-start-heading h2{
+  font-family: 'Rubik Scribble';
+  font-size: 40px;
 }
 .container{
   width: 100%;
@@ -15,6 +31,15 @@ body{
 }
 .row{
   width: 600px;
+  font-family:'Rubik Scribble' ;
+  color: aliceblue;
+  word-spacing: 4.5px;
+  letter-spacing: 2px;
+}
+.index-count{
+  color: sandybrown;
+  font-size: 20px;
+  font-weight: 800;
 }
 .header{
   display: flex;

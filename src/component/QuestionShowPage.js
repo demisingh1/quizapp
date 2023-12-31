@@ -5,7 +5,7 @@ import { shuffelArray } from '../utils';
 import ChoisesList from './ChoisesList';
 
 const QuestionShowPage = () => {
-  const{status ,question = [],nextQuestion,choosedAnswer,score} = useQuizContext()
+  const{status ,question = [],nextQuestion,score,loadQuiz,index} = useQuizContext()
 
   if(status === 'play'){
     // const choises = ([question?.correct_answer , question?.incorrect_answers]).flat();
@@ -22,7 +22,7 @@ console.log(question)
       <div className='container'>
       <div className='row'>
       <header className='header'>
-        <h2>Totalquestion</h2>
+       <span className='index-count'>{index + 1}</span> <h2>Total Questions:{loadQuiz.length}</h2>
       <h2>socer:{score}</h2>
       </header>
         <h2>{question.question}</h2>

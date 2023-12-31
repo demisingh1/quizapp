@@ -12,7 +12,12 @@ const QuizStartPage = () => {
   
   if(status === 'active'){
     return (
-      <button onClick={PlayQuiz}>Load Quiz</button>
+      <div className='quiz-start-heading'>
+        <h2>CLICK ON THE LOAD QUIZ BUTTON</h2> <br />
+        <h2>TO START THE QUIZ</h2>
+        <button className='btn btn-primary' onClick={PlayQuiz}>Load Quiz</button>
+
+      </div>
     )
   }
 }
