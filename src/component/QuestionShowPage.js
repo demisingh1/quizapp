@@ -1,7 +1,6 @@
 import React from 'react'
 import '../App.css';
 import { useQuizContext } from '../context/QuizAppContext'
-import { shuffelArray } from '../utils';
 import ChoisesList from './ChoisesList';
 
 const QuestionShowPage = () => {

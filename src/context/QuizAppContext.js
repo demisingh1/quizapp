@@ -40,8 +40,8 @@ const nextQuestion = ()=>{
 const selectAnswer = (e)=>{
   e.preventDefault();
   let ans = e.target.innerText
-  dispatch({type:CHOOSE_ANSWER, payload:{ans, question,score}})
-  console.log(e.target.innerText)
+  dispatch({type:CHOOSE_ANSWER, payload:{ans, question, score}})
+  // console.log(e.target.innerText)
 }
 
      return <QuizContext.Provider value = {{...state,question,PlayQuiz,nextQuestion,selectAnswer,dispatch }}>

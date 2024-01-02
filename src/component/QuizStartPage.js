@@ -1,11 +1,12 @@
 import React from 'react'
 import { useQuizContext } from '../context/QuizAppContext'
+import LoadingScreen from './LoadingScreen'
 
 const QuizStartPage = () => {
  const{status,PlayQuiz} = useQuizContext()
   if(status === 'loading'){
     return (
-      <div>loading...</div>
+      <div  className='loading-Screen' ><LoadingScreen /></div>
       )
   }
   

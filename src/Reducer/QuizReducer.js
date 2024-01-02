@@ -15,11 +15,13 @@ if(action.type === NEXT_QUESTION){
 }
 if(action.type === CHOOSE_ANSWER){
     const {question ,ans,score} = action.payload
-    if(ans === question.answer){
-
-    return {...state, choosedAnswer:ans, score:score + 1}
+    console.log(question.answer.toLowerCase() ,ans.toLowerCase() ,score); // I got an BUG when i comparing the text MAKE SURE COMPARE WITH LOWER CASE///
+    if(ans.toLowerCase() === question.answer.toLowerCase()){
+    return {...state, choosedAnswer:ans.toLowerCase(), score:score + 1} // text should be matched
     }
+    else{
     return {...state, choosedAnswer:ans}
+}
 }
 }
 
